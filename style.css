@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #6dace3, #96d9dc);
+    color: #222;
+}
+
+
+/* Header */
+
+header {
+    text-align: center;
+    padding: 50px 20px 30px;
+    color: white;
+}
+
+header h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+
+/* Main */
+
+main {
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+}
+
+
+/* Search Box */
+
+.search-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+}
+
+.search-box button {
+    padding: 15px 25px;
+    border: none;
+    border-radius: 10px;
+    background: #222;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.search-box button:hover {
+    background: #444;
+}
+
+
+/* Weather Card */
+
+.weather-card {
+    background: white;
+    padding: 35px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.weather-card h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.weather-icon {
+    font-size: 70px;
+    margin-bottom: 10px;
+}
+
+.weather-card h3 {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+.weather-card > p {
+    font-size: 18px;
+    color: #555;
+}
+
+
+/* Weather Details */
+
+.weather-details {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.detail {
+    background: #f1f5f9;
+    padding: 20px;
+    border-radius: 15px;
+    width: 45%;
+}
+
+.detail span {
+    font-size: 30px;
+}
+
+.detail p {
+    margin: 8px 0;
+    color: #555;
+}
+
+.detail strong {
+    font-size: 18px;
+}
+
+
+/* Footer */
+
+footer {
+    text-align: center;
+    color: white;
+    padding: 30px;
+    margin-top: 40px;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    .search-box {
+        flex-direction: column;
+    }
+
+    .search-box button {
+        width: 100%;
+    }
+
+    .weather-details {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .detail {
+        width: 100%;
+    }
+}
